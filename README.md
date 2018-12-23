@@ -6,6 +6,13 @@ A sample maven project using BPjs. Clone or fork this project to easily start yo
 * `src/main/java/il/ac/bgu/cs/bp/samplebpjsproject/HelloWorld.java` Simple "main" class for running `HelloBPjsWorld.js` and emitting its events to stdout.
 
 
+To make the project runnable from the commandline, add this to the `<properties>` node of the `pom.xml` file:
+
+    <exec.mainClass>package.name.goes.here.and.then.ClassName</exec.mainClass>
+
+Then run the application by typing:
+
+    mvn exec:java
 
 ## Please keep these:
 * This project uses [BPjs](https://github.com/bThink-BGU/BPjs).

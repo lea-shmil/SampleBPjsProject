@@ -1,4 +1,5 @@
 /* global bp */
+
 /**
  * Simple "Hello world" program.
  */
@@ -13,5 +14,5 @@ bp.registerBThread( "worldBT", function(){
 
 bp.registerBThread( "arbiter", function(){
     bp.sync( {waitFor:bp.Event("Hello,"),
-              block:bp.Event("World!")} );
+                block:bp.Event("World!")} );
 } );

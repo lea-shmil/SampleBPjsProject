@@ -6,12 +6,12 @@ import il.ac.bgu.cs.bp.bpjs.model.BProgram;
 import il.ac.bgu.cs.bp.bpjs.model.ResourceBProgram;
 
 /**
- * Simple class running a BPjs program that selects "hello world" events.
- * @author michael
+ * Simple class running a BPjs program that plays 7-Boom game.
  */
 public class HelloWorld {
     
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
+
         // This will load the program file  <Project>/src/main/resources/HelloBPjsWorld.js
         final BProgram bprog = new ResourceBProgram("HelloBPjsWorld.js");
         
